@@ -11,7 +11,7 @@ def callGoogle(passenger, gcmId, lat, lon):
 
 	url = "https://android.googleapis.com/gcm/send"
 
-	req = urllib2.Request(url, data, {'Content-Type': 'application/json','Authorization':'key=AIzaSyBiQFJzJkf4o5phdBW6lzKBmPCLYYU2Z30'})
+	req = urllib2.Request(url, data, {'Content-Type': 'application/json','Authorization':'key={your key}'})
 
 	f = urllib2.urlopen(req)
 	response = f.read()
